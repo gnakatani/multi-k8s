@@ -8,5 +8,4 @@ docker push stephengrider/multi-server:$SHA
 docker push gnakatani/multi-worker
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=stephengrider/multi-server:$SHA
-kubectl set image deployments/client-deployment client=gnakatani/multi-client:$SHA
-kubectl set image deployments/worker-deployment worker=gnakatani/multi-worker
+kubectl set image deployments/client-deployment client=gnakatani/multi-client kubectl set image deployments/worker-deployment worker=gnakatani/multi-worker
