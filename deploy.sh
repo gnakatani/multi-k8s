@@ -7,6 +7,4 @@ docker push gnakatani/multi-client:latest
 docker push gnakatani/multi-server:latest
 docker push gnakatani/multi-worker:latest
 # apply all configs in k8s
-kubectl apply -f k8s
-# 
-kubectl set image deployments/server-deployment server=gnakatani/multi-server kubectl set image deployments/client-deployment client=gnakatani/multi-client kubectl set image deployments/worker-deployment worker=gnakatani/multi-worker
+kubectl apply -f k8s kubectl set image deployments/server-deployment server=gnakatani/multi-server kubectl set image deployments/client-deployment client=gnakatani/multi-client kubectl set image deployments/worker-deployment worker=gnakatani/multi-worker
